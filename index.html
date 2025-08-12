@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="tr" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
+    <style>
+      /* Özel CSS kodunuzu <head> etiketi içine veya ayrı bir .css dosyasına ekleyin */
+      .masonry-grid {
+        column-count: 3; /* Her satırda kaç sütun olacağını belirler */
+        column-gap: 1.5rem; /* Sütunlar arasındaki boşluk */
+      }
+    
+      .masonry-grid .masonry-item {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 1.5rem; /* Her fotoğrafın altına boşluk bırakır */
+        
+      }
+    </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+    
+    <title>BANDO EFE</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/bando_efe_500x500.jpg" alt="Bando Efe Logo" width="40" height="40" class="d-inline-block">
+          <span class="me-3">BANDO EFE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Hakkımızda">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iletişim">İletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#etkinlik">Etkinliklerimiz</a>
+            </li>
+          </ul>
+          
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/905056002964" class="btn btn-success" target="_blank" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/bandoefe/?utm_source=qr&igsh=MXF1anRnZG1tMTdkbQ%3D%3D" class="btn btn-primary" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+    
+        </div>
+      </div>
+    </nav>
+
+      <!--CARD -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/id/77/1600/600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DÜĞÜN</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/67/1600/600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>AÇILIŞ</h5>
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/79/1600/600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>FESTİVAL</h5>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--CARD END-->
+
+      <!--CONTAİNER -->
+      <div class="container mt-5">
+        <div class="row">
+            <div id="Hakkımızda">
+                <h2 class="text-center">HAKKIMIZDA</h2>
+                <p class="text-center">Düğün, sünnet, açılış, festivaller ve en mutlu günlerinizde sizlere birlikteyiz. 
+                    🎉 <br>Bizimle birlikte bu özel anları paylaşmak için siz isteyin, biz çalalım! 🎶 </p>
+                    <p class="text-center">Bando Efe, müziğin coşkusunu ve ritmini her anınıza taşıyan profesyonel bir bando ekibidir. Yılların getirdiği tecrübe, güçlü repertuvar ve enerjik sahne performanslarımızla; düğünlerden kurumsal etkinliklere, özel kutlamalardan festival organizasyonlarına kadar her ortamı renklendiriyoruz.
+                        <br>Her biri alanında deneyimli müzisyenlerden oluşan ekibimiz, sadece müzik çalmakla kalmaz; dinleyicileri içine alan bir enerji, görsel şölen ve unutulmaz bir atmosfer yaratır. Amacımız, her etkinliği sizin ve misafirleriniz için eşsiz bir hatıraya dönüştürmektir.
+                        <br>
+                       <p class="text-center fst-italic" >Bando Efe olarak;</p> 
+                        
+                       <p  class="text-center fst-italic">Profesyonellik: Zamanında, düzenli ve yüksek kaliteli hizmet anlayışı
+                        <br>Çeşitlilik: Farklı tarz ve repertuvar seçenekleri
+                        <br>Coşku: Her performansta enerjiyi en üst seviyede tutma
+                        <br>Bizimle çalıştığınızda sadece bir bando kiralamış olmazsınız; aynı zamanda etkinliğinizin ruhunu yükselten, anılarınızda yer edecek bir müzik deneyimi de kazanırsınız.
+                      <br>
+                        <br> 🎺 Bando Efe – Ritim başlasın, coşku artsın!</p>
+
+            </div>
+        </div>
+            <hr>
+            <h2 class="text-center mt-5">HİZMETLERİMİZ</h2>
+            <div class="row featurette mt-5">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1 text-center">
+                    <BR></BR>
+                    <span class="text-body-secondary">Düğün & Nişan Organizasyonları</span>
+                  </h2>
+                  <p class="lead">
+                    En özel gününüzü, enerjik bando performanslarımızla daha da unutulmaz kılıyoruz. Gelin alma, konvoy, salon girişleri ve dans anlarında yüksek tempolu, coşkulu müzikler eşliğinde eğlenceyi zirveye taşıyoruz.
+                  </p>
+                  <br>
+                  <h2 class="featurette-heading fw-normal lh-1 text-center">
+                    
+                    <span class="text-body-secondary"> Kurumsal Etkinlikler</span>
+                  </h2>
+                  <p class="lead">
+                    Açılış törenleri, lansmanlar, şirket kutlamaları ve özel davetlerde sahne alarak markanıza prestij ve canlılık katıyoruz.
+                  </p>
+                  <br>
+                  <h2 class="featurette-heading fw-normal lh-1 text-center">
+                    
+                    <span class="text-body-secondary"> Festival & Şenlikler</span>
+                  </h2>
+                  <p class="lead">
+                    Kalabalıkları coşturan, interaktif ve görsel bir şölene dönüşen sahne performanslarımızla festivallerin enerjisini ikiye katlıyoruz.
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <img src="images/bando_efe_500x500.jpg" alt="">
+                </div>
+              </div>
+              <hr>
+              <div class="row featurette mt-5">
+
+                <div class="col-md-7 order-md-2">
+                  <div class="pe-md-4">
+                    <h3 class="featurette-heading fw-normal lh-1 text-center mb-3">
+                      <span class="text-body-secondary">Özel Gün Kutlamaları</span>
+                    </h3>
+                    <p class="lead">
+                      Doğum günleri, yıl dönümleri, mezuniyetler ve tüm özel anlarda müziğimizle mutluluğunuza eşlik ediyoruz.
+                    </p>
+              
+                    <h3 class="featurette-heading fw-normal lh-1 text-center my-4">
+                      <span class="text-body-secondary">Yürüyüş ve Kortej Performansları</span>
+                    </h3>
+                    <p class="lead">
+                      Sokak etkinlikleri, kortejler ve açık hava organizasyonlarında kalabalıkları arkamızdan sürükleyen ritimlerimizle fark yaratıyoruz.
+                    </p>
+              
+                    <h3 class="featurette-heading fw-normal lh-1 text-center my-4">
+                      <span class="text-body-secondary">Kişiye Özel Konseptler</span>
+                    </h3>
+                    <p class="lead">
+                      İsteğinize göre özel repertuvar, kostüm ve sahne düzenlemeleriyle etkinliğinizi tamamen size özel bir hale getiriyoruz.
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="col-md-5 order-md-1">
+                  <img src="images/49389103952_ff4b2cf256.jpg" class="img-fluid rounded shadow-sm" alt="Bando Efe performans">
+                </div>
+              </div>
+        </div>
+
+      </div>
+       <!--CONTAİNER END-->
+       <!--İLETİŞİM -->
+       <div id="iletişim" >
+       <main class="container my-5">
+        <div class="row">
+          <div class="col-12 text-center mb-5 ">
+            <h1 class="display-4 fw-bold">Bize Ulaşın</h1>
+            <p class="lead text-body-secondary">
+              Sorularınız veya etkinlik talepleriniz için aşağıdaki iletişim bilgilerimizden bize ulaşabilirsiniz.
+            </p>
+          </div>
+        </div>
+      
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card p-4 shadow-sm">
+              <h3 class="mb-4 text-center">İletişim Bilgileri</h3>
+              
+              <p class="lead">
+                <i class="bi bi-geo-alt-fill text-primary"></i> <strong>Adres:</strong> Güzelbahçe / İzmir
+              </p>
+              <p class="lead">
+                <i class="bi bi-telephone-fill text-primary"></i> <strong>Telefon:</strong> <span ><a href="tel:05056002964">05056002964</a></span>
+              </p>
+              
+              
+              <hr class="my-4">
+      
+              <h4 class="mb-3 text-center">Bizi Sosyal Medyada Takip Edin</h4>
+              <div class="d-flex gap-3 text-center">
+                <a href="https://www.instagram.com/bandoefe/?utm_source=qr&igsh=MXF1anRnZG1tMTdkbQ%3D%3D" class="btn btn-primary d-flex align-items-center" target="_blank">
+                  <i class="bi bi-instagram me-2 fs-5"></i> Instagram
+                </a>
+      
+                <a href="https://wa.me/905056002964" class="btn btn-success d-flex align-items-center" target="_blank">
+                  <i class="bi bi-whatsapp me-2 fs-5"></i> WhatsApp
+                </a>
+              </div>
+              
+              <hr class="my-4">
+      
+            </div>
+          </div>
+        </div>
+      </main>
+      
+    </div>
+       <!--İLETİŞİM END-->
+       <!--ETKİNLİK-->
+       <div id="etkinlik">
+<div class="container my-5 ">
+  <h1 class="text-center mb-4 id">Galeri</h1>
+  <section class="py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h6>
+            Videolarımız için 
+            <a href="https://www.instagram.com/bandoefe/?utm_source=qr&igsh=MXF1anRnZG1tMTdkbQ%3D%3D" class="btn btn-outline-secondary btn-sm " target="_blank">
+              tıklayın
+            </a>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="masonry-grid">
+    
+    <div class="masonry-item">
+      <a href="images/foto1.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.38 (1).jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 1">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto2.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.36.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 2">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto3.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.42.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 3">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto4.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.45.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 4">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto5.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.54.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 5">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.56.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto1.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.03.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 1">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto2.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.11.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 2">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto3.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.34.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 3">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto4.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.38.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 4">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto5.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.49.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 5">
+      </a>
+    </div>
+
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.57.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.58 (1).jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.59 (1).jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.54.00.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.54.00 (1).jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.56.16 (1).jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.56.16.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.52.36.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+    <div class="masonry-item">
+      <a href="images/foto6.jpg" class="glightbox" data-gallery="gallery1">
+        <img src="images/WhatsApp Image 2025-08-11 at 13.53.57.jpeg" class="img-fluid rounded shadow" alt="Fotoğraf 6">
+      </a>
+    </div>
+
+
+    
+    
+    </div>
+</div>
+</div>
+<!--ETKİNLİK END-->
+
+        <!--FOOTER -->
+       <div class="bg-dark">
+       <div class="container mt-5 bg-dark"> 
+        <footer class="py-3 my-4"> 
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-white">Anasayfa</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#Hakkımızda" class="nav-link px-2 text-white">Hakkımızda</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#iletişim" class="nav-link px-2 text-white">İletişim</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#etkinlik" class="nav-link px-2 text-white">Etkinliklerimiz</a>
+                </li> 
+                
+            </ul>
+             <p class="text-center text-white">© 2025 Company, Inc</p> 
+            </footer>
+         </div>
+        </div>
+        <!--FOOTER END-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  </body>
+</html>
