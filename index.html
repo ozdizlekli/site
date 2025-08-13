@@ -52,7 +52,30 @@
 body {
       padding-top: 35px; /* navbar yüksekliğine göre ayarla */
     }
-    
+    /* Kapsayıcı (Wrapper) */
+.kayan-yazi-kapsayici {
+  width: 100%; /* Kapsayıcının genişliği */
+  overflow: hidden; /* Dışarı taşan içeriği gizler */
+  white-space: nowrap; /* Metnin tek satırda kalmasını sağlar */
+  box-sizing: border-box;
+}
+
+/* Kayan Yazı Metni */
+.kayan-yazi-metni {
+  display: inline-block;
+  padding-left: 100%; /* Metnin başlangıçta ekranın dışında olmasını sağlar */
+  animation: kaydir 10s linear infinite; /* Animasyonun adı, süresi, hızı ve tekrarı */
+}
+
+/* Animasyon Kuralları */
+@keyframes kaydir {
+  from {
+    transform: translateX(-100%); /* Animasyonun başlangıç noktası */
+  }
+  to {
+    transform: translateX(0); /* Animasyonun bitiş noktası */
+  }
+}
  
 
     </style>
@@ -114,7 +137,12 @@ body {
     <div class="bg-light mt-5">
       <div class="container-fluid ">
         <div class="row ">
-          <p class="fw-bold text-center pt-2 "> Bando Efe – Ritim başlasın, coşku artsın! <span> <br> Detaylı bilgi için <a href="tel:05056002964">arayın</a>.</span></p>
+          <div class="kayan-yazi-kapsayici">
+            <p class="kayan-yazi-metni fw-bold  pt-2">
+              Bando Efe – Ritim başlasın, coşku artsın! <span>  Detaylı bilgi için <a href="tel:05056002964">arayın</a>.</span>
+            </p>
+          </div>
+          
         </div>
       </div>
     </div>
