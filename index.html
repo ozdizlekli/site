@@ -27,6 +27,9 @@
         margin-bottom: 1.5rem; /* Her fotoğrafın altına boşluk bırakır */
         
       }
+      .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
 
 
@@ -78,7 +81,7 @@ body {
               <a class="nav-link" href="#Hakkımızda">Hakkımızda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#hizmet">Hizmetlerimiz</a>
+              <a class="nav-link" href="#hizmetler">Hizmetlerimiz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#iletişim">İletişim</a>
@@ -108,9 +111,9 @@ body {
       <!--CARD END-->
 
     <div class="bg-light mt-5">
-      <div class="container">
-        <div class="row">
-          <p class="fw-bold text-center pt-2"> Bando Efe – Ritim başlasın, coşku artsın! <span> <br> Detaylı bilgi için <a href="tel:05056002964">arayın</a>.</span></p>
+      <div class="container-fluid ">
+        <div class="row ">
+          <p class="fw-bold text-center pt-2 "> Bando Efe – Ritim başlasın, coşku artsın! <span> <br> Detaylı bilgi için <a href="tel:05056002964">arayın</a>.</span></p>
         </div>
       </div>
     </div>
@@ -164,9 +167,13 @@ body {
 
       <!--CONTAİNER -->
       <div class="container mt-5 " >
-        <div class="row">
-            
-                <h2 class="text-center pt-5">HAKKIMIZDA</h2>
+        <h2 class="display-4 text-center fw-bold pt-5">HAKKIMIZDA</h2>
+        <hr class="w-25 mx-auto mb-5">
+        
+
+        <div class="row card mt-5">
+           
+                
                 <p class="text-center">Düğün, sünnet, açılış, festivaller ve en mutlu günlerinizde sizlere birlikteyiz. 
                     🎉 <br>Bizimle birlikte bu özel anları paylaşmak için siz isteyin, biz çalalım! 🎶 </p>
                     <p class="text-center">Bando Efe, müziğin coşkusunu ve ritmini her anınıza taşıyan profesyonel bir bando ekibidir. Yılların getirdiği tecrübe, güçlü repertuvar ve enerjik sahne performanslarımızla; düğünlerden kurumsal etkinliklere, özel kutlamalardan festival organizasyonlarına kadar her ortamı renklendiriyoruz.
@@ -183,78 +190,107 @@ body {
 
             </div>
         </div>
+        <br>
             <hr>
-            <div id="hizmet">
-            
-            <div class="row featurette pt-5">
-              <h2 class="text-center mt-5">HİZMETLERİMİZ</h2>
-                <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1 text-center">
-                    <BR></BR>
-                    <span class="text-body-secondary ">Düğün & Nişan Organizasyonları</span>
-                  </h2>
-                  <p class="lead text-center">
-                    En özel gününüzü, enerjik bando performanslarımızla daha da unutulmaz kılıyoruz. Gelin alma, konvoy, salon girişleri ve dans anlarında yüksek tempolu, coşkulu müzikler eşliğinde eğlenceyi zirveye taşıyoruz.
-                  </p>
-                  <br>
-                  <h2 class="featurette-heading fw-normal lh-1 text-center">
-                    
-                    <span class="text-body-secondary"> Kurumsal Etkinlikler</span>
-                  </h2>
-                  <p class="lead text-center">
-                    Açılış törenleri, lansmanlar, şirket kutlamaları ve özel davetlerde sahne alarak markanıza prestij ve canlılık katıyoruz.
-                  </p>
-                  <br>
-                  <h2 class="featurette-heading fw-normal lh-1 text-center">
-                    
-                    <span class="text-body-secondary"> Festival & Şenlikler</span>
-                  </h2>
-                  <p class="lead text-center">
-                    Kalabalıkları coşturan, interaktif ve görsel bir şölene dönüşen sahne performanslarımızla festivallerin enerjisini ikiye katlıyoruz.
-                  </p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                  <img src="images/WhatsApp Image 2025-08-11 at 13.52.36.jpeg" class="img-fluid rounded shadow-sm" alt="Bando Efe performans">
-
-                </div>
-              </div>
-            </div>
-              <hr>
-              <div class="row featurette mt-5">
-
-                <div class="col-md-7 order-md-2 mt-5">
-                  <div class="pe-md-4">
-                    <h3 class="featurette-heading fw-normal lh-1 text-center mb-3">
-                      <span class="text-body-secondary">Özel Gün Kutlamaları</span>
-                    </h3>
-                    <p class="lead text-center">
-                      Doğum günleri, yıl dönümleri, mezuniyetler ve tüm özel anlarda müziğimizle mutluluğunuza eşlik ediyoruz.
-                    </p>
-              
-                    <h3 class="featurette-heading fw-normal lh-1 text-center my-4">
-                      <span class="text-body-secondary">Yürüyüş ve Kortej Performansları</span>
-                    </h3>
-                    <p class="lead text-center">
-                      Sokak etkinlikleri, kortejler ve açık hava organizasyonlarında kalabalıkları arkamızdan sürükleyen ritimlerimizle fark yaratıyoruz.
-                    </p>
-              
-                    <h3 class="featurette-heading fw-normal lh-1 text-center my-4">
-                      <span class="text-body-secondary">Kişiye Özel Konseptler</span>
-                    </h3>
-                    <p class="lead text-center">
-                      İsteğinize göre özel repertuvar, kostüm ve sahne düzenlemeleriyle etkinliğinizi tamamen size özel bir hale getiriyoruz.
-                    </p>
+            <section id="hizmetler" class="py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold mt-5">HİZMETLERİMİZ</h2>
+                    <hr class="w-25 mx-auto mb-5">
                   </div>
                 </div>
-              
-                <div class="col-md-5 order-md-1">
-
+                
+                <div class="row g-5 align-items-center">
+                  <div class="col-md-7">
+                    <div class="card p-4 h-100 shadow-lg">
+                      <div class="card-body">
+                        
+                        <div class="mb-4">
+                          <h3 class="h4 text-center">Düğün & Nişan Organizasyonları</h3>
+                          <p class="lead">
+                            En özel gününüzü, enerjik bando performanslarımızla daha da unutulmaz kılıyoruz. Gelin alma, konvoy, salon girişleri ve dans anlarında yüksek tempolu, coşkulu müzikler eşliğinde eğlenceyi zirveye taşıyoruz.
+                          </p>
+                        </div>
+                        
+                        <hr>
+            
+                        <div class="mb-4">
+                          <h3 class="h4 text-center">Kurumsal Etkinlikler</h3>
+                          <p class="lead">
+                            Açılış törenleri, lansmanlar, şirket kutlamaları ve özel davetlerde sahne alarak markanıza prestij ve canlılık katıyoruz. Canlı müzikle etkinliklerinize profesyonel bir dokunuş katın.
+                          </p>
+                        </div>
+                        
+                        <hr>
+            
+                        <div>
+                          <h3 class="h4 text-center">Festival & Şenlikler</h3>
+                          <p class="lead">
+                            Kalabalıkları coşturan, interaktif ve görsel bir şölen sunarak festivallerin enerjisini ikiye katlıyoruz. Sahne performanslarımızla unutulmaz anılar biriktirin.
+                          </p>
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
                   
-
-                  <img src="images/WhatsApp Image 2025-08-11 at 13.52.36.jpeg" class="img-fluid rounded shadow-sm" alt="Bando Efe performans">
-
+                  <div class="col-md-5">
+                    <div class="position-relative">
+                      <img src="images/WhatsApp Image 2025-08-11 at 13.52.36.jpeg" class="img-fluid rounded-3 shadow-lg" alt="Bando Efe performans">
+                    </div>
+                  </div>
                 </div>
               </div>
+            </section>
+            </div>
+              <hr>
+              <section id="ek-hizmetler" class="py-5">
+                <div class="container">
+                  <div class="row g-5 align-items-center">
+                    
+                    <div class="col-md-5">
+                      <div class="position-relative">
+                        <img src="images/WhatsApp Image 2025-08-11 at 13.52.36.jpeg" class="img-fluid rounded-3 shadow-lg" alt="Bando Efe performans">
+                      </div>
+                    </div>
+              
+                    <div class="col-md-7">
+                      <div class="card p-4 h-100 shadow-lg">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                          
+                          <div class="mb-4">
+                            <h3 class="h4 text-center">Özel Gün Kutlamaları</h3>
+                            <p class="lead text-center">
+                              Doğum günleri, yıl dönümleri, mezuniyetler ve tüm özel anlarda müziğimizle mutluluğunuza eşlik ediyoruz.
+                            </p>
+                          </div>
+                          
+                          <hr>
+              
+                          <div class="mb-4">
+                            <h3 class="h4 text-center">Yürüyüş ve Kortej Performansları</h3>
+                            <p class="lead text-center">
+                              Sokak etkinlikleri, kortejler ve açık hava organizasyonlarında kalabalıkları arkamızdan sürükleyen ritimlerimizle fark yaratıyoruz.
+                            </p>
+                          </div>
+                          
+                          <hr>
+              
+                          <div>
+                            <h3 class="h4 text-center">Kişiye Özel Konseptler</h3>
+                            <p class="lead text-center">
+                              İsteğinize göre özel repertuvar, kostüm ve sahne düzenlemeleriyle etkinliğinizi tamamen size özel bir hale getiriyoruz.
+                            </p>
+                          </div>
+              
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
         </div>
 
       </div>
@@ -269,10 +305,11 @@ body {
 
 
        
-       <main class="container my-5 pt-5">
+       <main class="container my-5 pt-5 card">
         <div class="row">
           <div class="col-12 text-center mb-5 ">
-            <h1 class="display-4 fw-bold">Bize Ulaşın</h1>
+            <h2 class="display-4 fw-bold mt-5">Bize Ulaşın</h2>
+                    <hr class="w-25 mx-auto mb-5">
             <p class="lead text-body-secondary">
               Sorularınız veya etkinlik talepleriniz için aşağıdaki iletişim bilgilerimizden bize ulaşabilirsiniz.
             </p>
@@ -281,7 +318,7 @@ body {
       
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <div class="card p-4 shadow-sm">
+            <div class="card p-4 shadow-sm mb-5">
               <h3 class="mb-4 text-center">İletişim Bilgileri</h3>
               
               <p class="lead text-center">
@@ -328,8 +365,10 @@ body {
        <br><br>
        <hr>
        <div id="etkinlik">
-<div class="container my-5 ">
-  <h1 class="text-center mb-4 id">GALERİMİZ</h1>
+        <h2 class="display-4 fw-bold mt-5 text-center">GALERİMİZ</h2>
+                    <hr class="w-25 mx-auto mb-5">
+<div class="container my-5 card ">
+  
 
   <section class="py-5 text-center">
     <div class="container">
@@ -487,31 +526,57 @@ body {
 <!--ETKİNLİK END-->
 
         <!--FOOTER -->
-        <div class="container-fluid">
-
-        </div>
-       <div class="bg-dark">
-       <div class="container mt-5 bg-dark"> 
-        <footer class="py-3 my-4"> 
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Anasayfa</a>
-                </li> 
-                <li class="nav-item">
-                    <a href="#Hakkımızda" class="nav-link px-2 text-white">Hakkımızda</a>
-                </li>
-                 <li class="nav-item">
-                    <a href="#iletişim" class="nav-link px-2 text-white">İletişim</a>
-                </li> 
-                <li class="nav-item">
-                    <a href="#etkinlik" class="nav-link px-2 text-white">Etkinliklerimiz</a>
-                </li> 
-                
-            </ul>
-             <p class="text-center text-white">© 2025 Company, Inc</p> 
-            </footer>
-         </div>
-        </div>
+        
+        <footer class="bg-dark text-white py-5">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <a href="/" class="d-flex align-items-center mb-3 text-white text-decoration-none">
+                  <span class="fs-4 fw-bold">BANDO EFE</span>
+                </a>
+                <p class="text-white-50">
+                  En özel anlarınızı müziğin büyüsüyle unutulmaz kılıyoruz.
+                </p>
+                <div class="d-flex mt-3">
+                  <a href="https://www.instagram.com/bandoefe/" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+                </div>
+              </div>
+        
+              <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3 pe-4">Hızlı Erişim</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Anasayfa</a></li>
+                  <li class="nav-item mb-2"><a href="#hakkimizda" class="nav-link p-0 text-white-50">Hakkımızda</a></li>
+                  <li class="nav-item mb-2"><a href="#iletisim" class="nav-link p-0 text-white-50">İletişim</a></li>
+                  <li class="nav-item mb-2"><a href="#etkinlikler" class="nav-link p-0 text-white-50">Etkinliklerimiz</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3 pe-4">Bize Ulaşın</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <span class="text-white-50"><i class="bi bi-geo-alt-fill me-2"></i> Güzelbahçe / İzmir</span>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="tel:+905056002964" class="nav-link p-0 text-white-50">
+                      <i class="bi bi-telephone-fill me-2"></i> +90 505 600 29 64
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="mailto:bandofe@gmail.com" class="nav-link p-0 text-white-50"><i class="bi bi-envelope-fill me-2"></i> bandofe@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+            <hr class="my-4">
+        
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="col-md-4 mb-0 text-white-50">© 2025 BANDO EFE, Inc.</p>
+            </div>
+          </div>
+        </footer>
         <!--FOOTER END-->
 
 
@@ -522,4 +587,5 @@ body {
 </html>
 
 </html>
+
 
