@@ -38,3 +38,19 @@ function domClick() {
     // Renk kontrolü için güvenilir bir yöntem kullanın
     this.style.color = (this.style.color === "black") ? "#dc8528" : "black";
 }
+
+let myclock = document.querySelector("#myClock")
+function updateClock() {
+    let now = new Date();
+    let days = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+    let day = days[now.getDay()];
+    let hours = now.getHours().toString().padStart(2, '0');           // 2 haneli yapmak için
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+
+    let timeString = `${hours}:${minutes}:${seconds} - ${day}`;
+    document.getElementById("myClock").textContent = timeString;
+}
+
+setInterval(updateClock, 1000);                                       // Her saniye güncelle
+updateClock();                                                        // Sayfa yüklenince çalıştır
