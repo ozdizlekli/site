@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="tr" >
   <head>
-    
+    <!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -275,6 +277,10 @@ hr {
     opacity: 1;
   }
   
+  .glightbox-open {
+  overflow: visible !important; /* Scroll kaymasını engelle */
+}
+
   
     </style>
    
@@ -899,6 +905,7 @@ hr {
           });
         </script>
         <script src="bando.js"></script>
+
         <script>
           window.addEventListener("scroll", function () {
             const navbar = document.querySelector(".navbar");
@@ -909,6 +916,20 @@ hr {
             }
           });
         </script>
+        <!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
+<!-- GLightbox Başlatma ve Scroll Pozisyonu -->
+<script>
+const lightbox = GLightbox({
+  selector: '.glightbox',
+  loop: true,
+  zoomable: true,
+  autoplayVideos: false,
+  bodyClass: 'glightbox-open' // GLightbox açıldığında body'ye sadece class ekle
+});
+</script>
   </body>
 
 </html>
