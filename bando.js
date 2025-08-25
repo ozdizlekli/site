@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const words = document.querySelectorAll('.rotating-badge .word');
+    let currentIndex = 0;
+  
+    // İlk kelimeyi aktif yap
+    words[currentIndex].classList.add('active');
+  
+    function rotateWords() {
+      words[currentIndex].classList.remove('active');
+  
+      currentIndex = (currentIndex + 1) % words.length;
+  
+      words[currentIndex].classList.add('active');
+    }
+  
+    setInterval(rotateWords, 2000);
 let greeting = document.querySelector("#degiskenrenk");
 greeting.addEventListener("mouseover", domClick);
 
@@ -53,4 +69,6 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000);                                       // Her saniye güncelle
-updateClock();                                                        // Sayfa yüklenince çalıştır
+updateClock();          
+                                              // Sayfa yüklenince çalıştır
+                                            });

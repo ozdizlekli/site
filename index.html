@@ -226,6 +226,56 @@ hr {
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
 
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+  }
+  
+  .static-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .rotating-badge {
+    position: relative;
+    height: 32px;
+    width: 400px; /* kelimelerin sığacağı kadar genişlik */
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 0 12px;
+    background-color: #f6f8fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .word {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 100%); /* başlangıçta kutunun altında */
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 32px;
+    white-space: nowrap;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #eb972a 0%, #efaf41 50.2%, #eb972a 100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .word.active {
+    transform: translate(-50%, 0); /* kutunun ortasına kaydır */
+    opacity: 1;
+  }
+  
+  
     </style>
    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -237,6 +287,7 @@ hr {
     <title>BANDO EFE</title>
   </head>
   <body style="height:2000px">
+    
     <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container-fluid">
@@ -362,6 +413,21 @@ hr {
 <div class="text-center mb-3">
   <a href="#iletişim" class="btn-animated pt-serif-regular">Fiyat Alın!</a>
 </div>
+<div class="container ">
+  
+  <div class="subtitle-container mb-3 ">
+     
+      <div class="rotating-badge">
+          <span class="word">Düğün ve Özel Gün Performansları</span>
+          <span class="word">Festival ve Şenlikler</span>
+          <span class="word">Kurumsal Etkinlikler</span>
+          <span class="word">Özel gün kutlamaları</span>
+          <span class="word">yürüyüş ve kortej performansları</span>
+          <span class="word">kişiye özel konseptler</span>
+          
+      </div>
+  </div>
+
          <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
